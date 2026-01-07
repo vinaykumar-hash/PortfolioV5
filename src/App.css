@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Fustat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Homemade+Apple&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-fustat: 'Fustat', sans-serif;
+  --font-apple: 'Homemade Apple', cursive;
+  --color-primary: #C80036;
+  --color-secondary: #FF6969;
+  --color-primary-dark: #0D0D0D;
+  --color-primary-tint: #FF6D1F;
+}
