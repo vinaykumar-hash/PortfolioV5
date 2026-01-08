@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import Head from './components/Head'
 import videoBg from './assets/2025.mp4'
 import Intro from './components/Intro'
+import Projects from './components/Projects'
 
 function App() {
   const scrollRef = useRef(null);
@@ -41,15 +42,18 @@ function App() {
       />
 
       {/* Section 1: Hero & Face */}
-      <section className={`min-h-screen w-full snap-start relative flex flex-col items-center transition-all duration-500 ${isPaused ? 'bg-[#1A1A1A]' : ''}`}>
+      <section className={`min-h-screen w-full snap-start relative flex flex-col items-center justify-between transition-all duration-500 ${isPaused ? 'bg-[#1A1A1A]' : ''}`}>
         <Header />
         <Hero />
         <Head isPaused={isPaused} setIsPaused={setIsPaused} />
       </section>
 
       {/* Section 2: Intro */}
-      <section className=' min-h-[500vh] w-full snap-start flex justify-center items-start relative backdrop-blur-2xl'>
+      <section className=' min-h-screen w-full snap-start flex flex-col justify-start items-center relative backdrop-blur-2xl'>
         <Intro scrollContainerRef={scrollRef} />
+      </section>
+      <section className=' min-h-screen w-full snap-start flex flex-col justify-start items-center relative backdrop-blur-2xl'>
+        <Projects />
       </section>
     </div>
   )

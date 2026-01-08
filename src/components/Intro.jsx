@@ -14,13 +14,13 @@ function Intro({ scrollContainerRef }) {
     });
 
     // 🔍 DEBUG
-    const [randomNumber, setRandomNumber] = useState(0);
-    useEffect(() => {
-        return scrollYProgress.on("change", (v) => {
-            console.log("scrollYProgress:", v);
-            setRandomNumber(v);
-        });
-    }, [scrollYProgress]);
+    // const [randomNumber, setRandomNumber] = useState(0);
+    // useEffect(() => {
+    //     return scrollYProgress.on("change", (v) => {
+    //         console.log("scrollYProgress:", v);
+    //         setRandomNumber(v);
+    //     });
+    // }, [scrollYProgress]);
 
     const scale = useTransform(scrollYProgress, [0, 0.6], [1, 0]);
     const height = useTransform(
