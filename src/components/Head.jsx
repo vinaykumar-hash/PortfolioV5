@@ -90,11 +90,11 @@ function Head({ isPaused, setIsPaused }) {
     }, [isPaused]);
 
     return (
-        <div className='w-full flex justify-center items-center relative h-[200px] overflow-hidden'>
+        <div className='w-[200px] flex justify-center items-center relative h-[200px] overflow-hidden'>
             <div
                 ref={headRef}
                 onClick={() => setIsPaused(!isPaused)}
-                className='cursor-pointer rounded-full bg-[#1A1A1A] absolute top-0 flex flex-col justify-start items-center p-20 scale-50 origin-top w-[400px] h-[400px]'
+                className='cursor-pointer rounded-full  absolute top-0 flex flex-col justify-start items-center p-20 scale-50 origin-top w-[400px] h-[400px]'
             >
                 <div className='flex justify-center items-center gap-12 pt-4'>
                     <div className='flex flex-col items-center gap-6'>
@@ -125,7 +125,7 @@ function Head({ isPaused, setIsPaused }) {
                                         className='h-16 w-16 rounded-full bg-primary-dark relative flex justify-end items-end p-3'
                                         style={{ transform: `rotate(${leftEyeRotation}deg)` }}
                                     >
-                                        <div className=' h-6 w-2 bg-white/80 rounded-full rotate-45'></div>
+                                        <div className=' h-6 w-4 bg-white/80 rounded-full rotate-45'></div>
                                     </div>
                                 </motion.div>
                             </div>
@@ -159,7 +159,7 @@ function Head({ isPaused, setIsPaused }) {
                                         className='h-16 w-16 rounded-full bg-primary-dark relative flex justify-end items-end p-3'
                                         style={{ transform: `rotate(${rightEyeRotation}deg)` }}
                                     >
-                                        <div className=' h-6 w-2 bg-white/80 rounded-full rotate-45'></div>
+                                        <div className=' h-6 w-4 bg-white/80 rounded-full rotate-45'></div>
                                     </div>
                                 </motion.div>
                             </div>
@@ -168,7 +168,7 @@ function Head({ isPaused, setIsPaused }) {
                 </div>
 
             </div>
-        </div>
+        </div >
     )
 }
 

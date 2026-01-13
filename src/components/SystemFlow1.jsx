@@ -61,28 +61,28 @@ function SystemFlow1() {
                 setActiveHighlight('client');
 
                 // 1. Client -> Server
-                await animateStep(paths.client_server, 1.5, 'server');
+                await animateStep(paths.client_server, 1, 'server');
 
                 // 2. Server -> Google
-                await animateStep(paths.server_google, 1.5, 'google');
+                await animateStep(paths.server_google, 1, 'google');
 
                 // 3. Google -> Server
-                await animateStep(paths.google_server, 1.5, 'server');
+                await animateStep(paths.google_server, 1, 'server');
 
                 // 4. Server -> Supabase
-                await animateStep(paths.server_supabase, 1.5, 'supabase');
+                await animateStep(paths.server_supabase, 1, 'supabase');
 
                 // 5. Supabase -> Server
-                await animateStep(paths.supabase_server, 1.5, 'server');
+                // await animateStep(paths.supabase_server, 1.5, 'server');
 
                 // 6. Server -> Redis
                 await animateStep(paths.server_redis, 1.0, 'redis');
 
                 // 7. Redis -> Server
-                await animateStep(paths.redis_server, 1.0, 'server');
+                // await animateStep(paths.redis_server, 1.0, 'server');
 
                 // 8. Server -> Client
-                await animateStep(paths.server_client, 1.5, 'client');
+                await animateStep(paths.server_client, 1, 'client');
             }
         };
 
@@ -120,7 +120,7 @@ function SystemFlow1() {
                 style={{ transform: `scale(${zoom})` }}
             >
                 {/* Scalable Container */}
-                <div className="relative w-[1000px] h-[600px] flex-shrink-0 bg-transparent transform scale-[0.3] sm:scale-[0.4] md:scale-[0.5] lg:scale-[0.6] xl:scale-[0.7] 2xl:scale-[0.8] origin-center transition-transform duration-500">
+                <div className="relative w-[1000px] h-[600px] flex-shrink-0 bg-transparent transform scale-[0.25] sm:scale-[0.4] md:scale-[0.5] lg:scale-[0.6] xl:scale-[0.7] 2xl:scale-[0.8] origin-center transition-transform duration-500">
 
                     {/* SVG Connections Layer */}
                     <svg className="absolute inset-0 w-full h-full z-0 pointer-events-none overflow-visible">
