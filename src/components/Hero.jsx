@@ -8,6 +8,7 @@ import instagramIcon from '../assets/social/Instagram.svg';
 import linkedinIcon from '../assets/social/LinkedIn.svg';
 import behanceIcon from '../assets/social/Behance.svg';
 import telegramIcon from '../assets/social/Telegram App.svg';
+import CurvedLine from '../assets/CurvedLine.svg';
 
 const socialLinks = [
     { name: 'Gmail', icon: gmailIcon, url: 'mailto:vinaykumar7525@gmail.com' },
@@ -32,7 +33,7 @@ const Hero = () => {
                         initial={{ clipPath: "inset(0 100% 0 0)" }}
                         animate={{ clipPath: "inset(0 0 0 0)" }}
                         transition={{ duration: 1.5, ease: "easeInOut" }}
-                        className='absolute -bottom-4 -right-4 lg:-bottom-8 lg:-right-8' src="../src/assets/CurvedLine.svg" alt="" />
+                        className='absolute -bottom-4 -right-4 lg:-bottom-8 lg:-right-8' src={CurvedLine} alt="" />
                 </div>
                 {/* <motion.div className=''
 

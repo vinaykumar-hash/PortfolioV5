@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { motion, AnimatePresence } from "framer-motion";
 import SystemFlow1 from './SystemFlow1';
 
+import switchBg from '../assets/switch.png';
+
 const Project = () => {
     const [hoveredAction, setHoveredAction] = useState(null);
     const [showSystemFlow, setShowSystemFlow] = useState(false);
@@ -10,7 +12,7 @@ const Project = () => {
         <div className='w-full h-full relative group overflow-hidden bg-primary-dark'>
             {/* Background Image */}
             <motion.img
-                src="../src/assets/switch.png"
+                src={switchBg}
                 className={`absolute inset-0 w-full h-full object-cover transition-all duration-700 ${showSystemFlow ? 'grayscale opacity-30 blur-sm' : 'group-hover:scale-105 opacity-60'}`}
             />
 
